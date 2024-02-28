@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-log in</title>
+    <link rel="stylesheet" href="src/login-page.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/fa7ebd979a.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-[#f0f2f5]">
+    <!-- container start -->
+    <div class="md:my-16 md:flex md:justify-center md:gap-20 xl:justify-center xl:flex xl:gap-1 xl:my-16 xl:mx-44">
+        <!-- container One start -->
+        <div>
+        <!-- Facebook text start -->
+        <div class="text-center mt-5 md:text-left">
+            <h1 class="text-[40px] font-bold text-blue-600">facebook</h1>
+            <p class="text-4xl text-gray-900 mt-3 font-medium">Recent logins</p>
+            <p class="text-[15px] text-gray-700 mt-2">Click your picture or add an account.</p>
+        </div>
+        <!-- facebook text end -->
+        <!-- already and add account box parent start -->
+        <div class="xl:flex xl:gap-4 xl">
+            <!-- already two box account start -->
+        <div class="flex justify-center gap-4 mt-5 md:flex md:justify-start">
+            <div class="bg-white w-[160px] h-[210px] rounded-b-xl transform hover:drop-shadow-xl z-0 duration-[.2s] border rounded-t-2xl relative">
+                <img class="w-[160px] h-[160px] object-cover rounded-t-xl" src="images/sanzid.jpg" alt="">
+                <p class="text-center mt-2 text-[20px] text-gray-700">Shahriar</p>
+                <a href="#"><img class="absolute top-1 left-1 w-6 transform hover:scale-105 duration-[.2s]" src="images/cross.png" alt=""></a>
+            </div>
+            <div class="bg-white w-[160px] h-[210px] rounded-b-xl transform hover:drop-shadow-xl z-0 duration-[.2s] border rounded-t-2xl">
+                <img class="w-[160px] h-[160px] object-cover rounded-t-xl object-cover" src="images/affia.png" alt="">
+                <p class="text-center mt-2 text-[20px] text-gray-700 ">Affia</p>
+                <a href="#"><img class="absolute top-1 left-1 w-6 transform hover:scale-105 duration-[.2s]" src="images/cross.png" alt=""></a>
+            </div>
+        </div>
+        <!-- already two box account end -->
+        <!-- add account box start -->
+            <div class="flex items-center justify-center mt-3 md:flex md:justify-start xl:mt-5">
+                <div class="rounded-xl overflow-hidden transform hover:drop-shadow-xl z-0 duration-[.2s] border">
+                    <div class="bg-gray-100 w-[160px] h-[160px] flex items-center justify-center">
+                        <button href=""><img class="w-[52px]" src="images/facebook-add-btn.png" alt=""></button>
+                    </div>
+                    <div class="h-[46px] bg-white flex items-center justify-center text-blue-600 cursor-pointer font-medium">
+                        <p>Add Account</p>
+                    </div>
+                </div>
+            </div>
+        <!-- add account box end -->
+        </div>
+        <!-- already and add account box end -->
+        </div>
+        <!-- container One end -->
+        <!-- container Two start -->
+        <div class="xl:flex xl:items-center xl:justify-center xl:w-full xl:my-10 md:my-12">
+            <div class="flex justify-center items-center flex-col mt-5 round">
+                <div class="w-[396px] bg-white rounded-xl pl-4 pt-4 pr-4 pb-7 shadow-xl">
+                    <form action="">
+                        <div>
+                            <input class="border-2 rounded-md px-4 py-3 w-full placeholder:font-medium placeholder:text-[18px] focus:outline-none focus:ring-1 ring-blue-400 focus:placeholder:text-gray-300" type="email" type="number" placeholder="Email address and phone number">
+                        </div>
+                        <div>
+                            <input class="border-2 rounded-md px-4 py-3 w-full placeholder:font-medium placeholder:text-[18px] focus:outline-none focus:ring-1 ring-blue-400 mt-4 focus:placeholder:text-gray-300" type="password" name="" id="" placeholder="Password">
+                        </div>
+                        <div>
+                            <button class="w-full font-semibold text-white bg-blue-600 p-3 rounded-md mt-4">Log in</button>
+                        </div>
+                        <a class="flex justify-center items-center mt-4 text-blue-600 font-medium" href="#">Forgotten Password?</a>
+                    </form>
+                    <hr class="mt-4">
+                    <div class="flex justify-center items-center">
+                        <button class="w-[192px] h-[45px] bg-[#42b72a]  text-white font-semibold text-[17px] rounded-md mt-7">Creat new account</button>
+                    </div>
+                </div>
+                <p class="mt-2">
+                    <span><a class="font-medium mr-1" href="#">Creat a page</a></span> for a celebrity, brand or business.
+                </p>
+            </div>
+        </div>
+        <!-- container Two end -->
+    </div>
+    <!-- container end -->
+</body>
+</html>
