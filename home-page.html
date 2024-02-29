@@ -23,75 +23,113 @@
                 <img src="images/fb-logo-mb.png" alt="" class="w-32 h-auto">
             </a>
             <div class="flex justify-between items-center space-x-1">
-                <div class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 w-10 h-10 sm:w-11">
-                    <box-icon name='search-alt-2'></box-icon>
-                    <input type="search" placeholder="Search Facebook">
+                <div class="relative bg-gray-100 text-gray-500 dark:bg-dark-third px-2 py-2 w-10 h-10 sm:w-11 sm:h-11 lg:h-10 lg:w-10 xl:w-max xl:pl-3 xl:pr-8 rounded-full flex items-center justify-center cursor-pointer">
+                    <i class='bx bx-search-alt-2 text-xl xl:mr-2 dark:text-dark-txt'></i>
+                    <input type="search" placeholder="Search Facebook" class="outline-none bg-transparent hidden xl:inline-block">
+                </div>
+                <div class="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt"> 
+                    <i class='bx bxl-messenger' ></i>
+                </div>
+                <div class="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark:text-dark-txt">
+                    <i class='bx bxs-moon' ></i>
                 </div>
             </div>
         </div>
         <!-- LEFT NAV END -->
         <!-- MAIN NAV -->
-        <ul>
-            <li>
-                <a href="#">
-                    <box-icon type='solid' name='home-smile'></box-icon>
+        <ul class="w-full flex lg:w-max items-center justify-center">
+            <li class="w-1/5 md:w-max text-center">
+                <a href="#" class="w-full text-2xl py-2 px-3 xl:px-12 cursor-pointer text-gray-600 text-center inline-block text-blue-500 border-b-4 border-blue-500">
+                    <i class='bx bx-home-alt'></i>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <box-icon type='solid' name='videos'></box-icon>
+            <li class="w-1/5 md:w-max text-center">
+                <a href="#" class="w-full text-2xl py-2 px-3 xl:px-12 cursor-pointer text-gray-600 text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class='bx bxs-videos'></i>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <box-icon name='store-alt'></box-icon>
+            <li class="w-1/5 md:w-max text-center">
+                <a href="#" class="w-full text-2xl py-2 px-3 xl:px-12 cursor-pointer text-gray-600 text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class='bx bx-store-alt'></i>
                 </a>
             </li>
-            <li>   
-                <a href="#">
+            <li class="w-1/5 md:w-max text-center">   
+                <a href="#" class="w-full text-2xl py-2 px-3 xl:px-12 cursor-pointer text-gray-600 text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
                     <i class="fa-solid fa-users-line"></i>
                 </a>
             </li>
-            <li>    
-                <a href="#">
+            <li class="w-1/5 md:w-max text-center">    
+                <a href="#" class="w-full text-2xl py-2 px-3 xl:px-12 cursor-pointer text-gray-600 text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
                     <i class="fa-solid fa-gamepad"></i>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center inline-block md:hidden">    
+                <a href="#" class="w-full text-2xl py-2 px-3 xl:px-12 cursor-pointer text-gray-600 text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third dark:text-dark-txt relative">
+                    <i class='bx bx-menu'></i>
                 </a>
             </li>
         </ul>
         <!-- MAIN NAV END -->
 
         <!-- RIGHT NAV -->
-        <ul>
-            <li>
-                <a href="#">
-                    <box-icon name='menu'></box-icon>
+        <ul class="hidden md:flex mx-4 items-center justify-center">
+            <li class="text-xl hidden xl:grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                <a href="#" class="">
+                    <i class='bx bx-menu'></i>
                 </a>
             </li>
             <li>
-                <div>
-                    <box-icon type='logo' name='messenger'></box-icon>
+                <div class="text-xl grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <a href="#">
+                        <i class='bx bxl-messenger' ></i>
+                    </a>
                 </div>
             </li>
             <li>
-                <div>
-                    <box-icon type='solid' name='bell'></box-icon>
+                <div class="text-xl grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <a href="#">
+                        <i class='bx bxs-bell' ></i>
+                    </a>
                 </div>
             </li>
             <li>
-                <div>
-                    <img class="object-cover" src="images/sanzid.jpg" alt="Profile picture">
-                    <span>Shahriar</span>
+                <div class="h-full hidden xl:flex">
+                    <a href="#" class="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1">
+                        <img class="object-cover rounded-full h-12 w-12" src="images/sanzid.jpg" alt="Profile picture">
+                    </a>
                 </div>
             </li>
             <li>
-                <div>
-                    <box-icon type='solid' name='moon'></box-icon>
+                <div class="text-xl grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                    <a href="#">
+                        <i class='bx bxs-moon' ></i>
+                    </a>
                 </div>
             </li>
         </ul>
         <!-- RIGHT NAV END -->
     </nav>
     <!-- Nav END -->
-  
+    
+
+    <!-- MAIN -->
+    <div class="flex justify-center h-screen"> 
+        <!-- LEFT MENU -->
+        <div>
+
+        </div>
+        <!-- LEFT MENU END -->
+        <!-- MAIN CONTENT -->
+        <div>
+
+        </div>
+        <!-- MAIN CONTENT END -->
+        <!-- RIGHT MENU -->
+        <div>
+
+        </div>
+        <!-- RIGHT MENU END -->
+    </div>
+    <!-- MAIN END -->
 </body>
 </html>
