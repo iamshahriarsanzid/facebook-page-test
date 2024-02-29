@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="shortcut icon" href="images/fb-logo.png" type="image/png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/fa7ebd979a.js" crossorigin="anonymous"></script>
+</head> 
+<body class="bg-gray-100 dark:bg-dark-main">
+    <!-- Nav -->
+    <nav class="bg-white dark:bg-dark-second h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 border-b dark:border-dark-third">
+        <!-- LEFT NAV -->
+
+        <div class="flex items-center justify-between w-full md:w-max px-4 py-2">
+            <a href="#" class="mr-2 hidden md:inline-block">
+                <img src="images/facebook.png" alt="Facebook logo" class="w-24 sm:w-20 lg:w-10 h-auto">
+            </a>
+            <a href="#" class="inline-block md:hidden">
+                <img src="images/fb-logo-mb.png" alt="" class="w-32 h-auto">
+            </a>
+            <div class="flex justify-between items-center space-x-1">
+                <div class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 w-10 h-10 sm:w-11">
+                    <box-icon name='search-alt-2'></box-icon>
+                    <input type="search" placeholder="Search Facebook">
+                </div>
+            </div>
+        </div>
+        <!-- LEFT NAV END -->
+        <!-- MAIN NAV -->
+        <ul>
+            <li>
+                <a href="#">
+                    <box-icon type='solid' name='home-smile'></box-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <box-icon type='solid' name='videos'></box-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <box-icon name='store-alt'></box-icon>
+                </a>
+            </li>
+            <li>   
+                <a href="#">
+                    <i class="fa-solid fa-users-line"></i>
+                </a>
+            </li>
+            <li>    
+                <a href="#">
+                    <i class="fa-solid fa-gamepad"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- MAIN NAV END -->
+
+        <!-- RIGHT NAV -->
+        <ul>
+            <li>
+                <a href="#">
+                    <box-icon name='menu'></box-icon>
+                </a>
+            </li>
+            <li>
+                <div>
+                    <box-icon type='logo' name='messenger'></box-icon>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <box-icon type='solid' name='bell'></box-icon>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img class="object-cover" src="images/sanzid.jpg" alt="Profile picture">
+                    <span>Shahriar</span>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <box-icon type='solid' name='moon'></box-icon>
+                </div>
+            </li>
+        </ul>
+        <!-- RIGHT NAV END -->
+    </nav>
+    <!-- Nav END -->
+  
+</body>
+</html>
