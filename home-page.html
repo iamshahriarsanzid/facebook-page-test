@@ -73,34 +73,48 @@
 
         <!-- RIGHT NAV -->
         <ul class="hidden md:flex mx-4 items-center justify-center">
-            <li class="text-xl hidden xl:grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
-                <a href="#" class="">
-                    <i class='bx bx-menu'></i>
+            <li class="text-xl hidden xl:grid place-items-center bg-gray-200 w-10 h-10 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-2 cursor-pointer hover:bg-gray-300 relative">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
                 </a>
             </li>
             <li>
-                <div class="text-xl grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                <div class="text-xl grid place-items-center bg-gray-200 w-10 h-10 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-2 cursor-pointer hover:bg-gray-300 relative">
                     <a href="#">
-                        <i class='bx bxl-messenger' ></i>
+                        <i class="fa-brands fa-facebook-messenger"></i>
                     </a>
+                    <a href="#">
+                        <div class="bg-red-600 w-[18px] h-[18px] rounded-full absolute right-[-4px] top-[-3px]">
+                            <div class="absolute top-[-6px]">
+                                <span class="text-white flex justify-center items-center text-[13px] absolute left-[5px] font-medium">7</span>
+                            </div>
+                    </a>
+                    </div>
                 </div>
             </li>
             <li>
-                <div class="text-xl grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                <div class="text-xl grid place-items-center bg-gray-200 w-10 h-10 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-2 cursor-pointer hover:bg-gray-300 relative">
                     <a href="#">
-                        <i class='bx bxs-bell' ></i>
+                        <i class="fa-solid fa-bell"></i>
                     </a>
+                    <a href="#">
+                        <div class="bg-red-600 w-[18px] h-[18px] rounded-full absolute right-[-4px] top-[-3px]">
+                            <div class="absolute top-[-6px]">
+                                <span class="text-white flex justify-center items-center text-[13px] absolute left-[5px] font-medium">9</span>
+                            </div>
+                    </a>
+                    </div>
                 </div>
             </li>
             <li>
                 <div class="h-full hidden xl:flex">
                     <a href="#" class="inline-flex items-center justify-center p-1 rounded-full hover:bg-gray-200 dark:hover:bg-dark-third mx-1">
-                        <img class="object-cover rounded-full h-12 w-12" src="images/sanzid.jpg" alt="Profile picture">
+                        <img class="object-cover rounded-full h-10 w-10" src="images/sanzid.jpg" alt="Profile picture">
                     </a>
                 </div>
             </li>
             <li>
-                <div class="text-xl grid place-items-center bg-gray-200 w-12 h-12 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+                <div class="text-xl grid place-items-center bg-gray-200 w-10 h-10 dark:bg-dark-third dark:text-dark-txt rounded-full mx-1 p-2 cursor-pointer hover:bg-gray-300 relative">
                     <a href="#">
                         <i class='bx bxs-moon' ></i>
                     </a>
@@ -115,18 +129,316 @@
     <!-- MAIN -->
     <div class="flex justify-center h-screen"> 
         <!-- LEFT MENU -->
-        <div>
-
+        <div class="w-1/5 pt-16 h-full hidden xl:flex flex-col fixed top-0 left-0 ">
+            <ul class="p-4">
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <img class="object-cover w-7 h-7 rounded-full" src="images/sanzid.jpg" alt="Profile picture">
+                        <span>Sanzid Shahriar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-user-group text-blue-600 "></i>
+                        <span>Friends</span>
+                    </a>    
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-circle-play  text-blue-600 text-xl"></i>
+                        <span>video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-id-card-clip text-blue-500 text-lg"></i>
+                        <span>Feeds</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-bookmark text-purple-700 text-lg"></i>
+                        <span>Saved</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third rounded-full">
+                        <i class="fa-solid fa-clock  text-blue-600 text-lg"></i>
+                        <span>Memories</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-people-group  text-blue-600 text-lg"></i>
+                        <span>Groups</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-store text-blue-500  rounded-full text-lg"></i>
+                        <span>Marketplace</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-calendar-plus text-red-600  rounded-full text-lg"></i>
+                        <span>Events</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class="fa-solid fa-arrow-trend-up text-blue-500  rounded-full text-lg"></i>  
+                        <span>Adds Maneger</span>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <i class='bx bxs-chevron-down-circle text-gray-400 text-xl'></i>                        
+                        <span>See more</span>
+                    </a>
+                </li>   
+                <li class="border-b border-gray-300 dark:border-dark-third mt-2"></li>
+            </ul>
+            <div class="flex items-center justify-between px-4 h-4 group">
+                <span class="font-semibold text-gray-500 text-lg dark:text-dark-txt">Your shortcuts</span>
+                <span class="text-blue-500 cursor-pointer hover:bg-gray-200 dark:bg-dark-third p-2 rounded-md hidden group-hover:inline-block">Edit</span>
+            </div>
+            <ul class="p-4">
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p-2 hover:bg-gray-200 rounded-lg transition-all dark:text-dark-txt hover:dark:bg-dark-third">
+                        <img class="w-6 h-6 object-cover" src="images/leauge of angels pact.jpeg" alt="">
+                        <span>Leauge of Angels pact</span>
+                    </a>
+                </li> 
+            </ul>
         </div>
         <!-- LEFT MENU END -->
         <!-- MAIN CONTENT -->
-        <div>
+        <div class="w-full lg:w-2/3 xl:w-2/5 pt-32 lg:pt-16 px-2">
+            <!-- STORY -->
+            <div class="relative flex space-x-2 pt-4">
+                <div class="w-1/4 sm:w-[800px] h-[15rem] rounded-xl shadow overflow-hidden flex flex-col group cursor-pointer bg-white">
+                    <div class="overflow-hidden">
+                        <img class="h-48 object-cover group-hover:transform group-hover:scale-105 transition-all duration-1000" src="images/sanzid.jpg" alt="">
+                    </div>
+                    <div class="bg-blue-600 text-white text-3xl w-8 h-8 rounded-full absolute left-[45px] bottom-[32px] pb-[1px] border-2 dark:border-dark-third">
+                        <i class='bx bx-plus flex justify-center items-center' ></i>
+                    </div>
+                    <div>
+                        <span class="flex justify-center items-center mt-3 font-bold">
+                            Creat story
+                        </span>
+                    </div>
+                </div>
+                <div class="w-1/4 sm:w-[800px] h-[15rem] rounded-xl shadow overflow-hidden flex flex-col group cursor-pointer relative">
+                    <div class="overflow-hidden">
+                        <img class="h-[15rem] object-cover group-hover:transform group-hover:scale-105 transition-all duration-1000" src="images/santa.jpg" alt="">
+                    </div>
+                    <div class="absolute ring-blue-600 ring-4 rounded-full left-4 top-4">
+                        <img class="w-9 rounded-full" src="images/santa.jpg" alt="">
+                    </div>
+                    <div class="absolute bottom-2 left-2 font-semibold">
+                        <span class="text-white text-sm">Šhåńtã Îšlãm</span>
+                    </div>
+                </div>
+                <div class="w-1/4 sm:w-[800px] h-[15rem] rounded-xl shadow overflow-hidden flex flex-col group cursor-pointer relative">
+                    <div class="overflow-hidden">
+                        <img class="h-[15rem] object-cover group-hover:transform group-hover:scale-105 transition-all duration-1000" src="images/fahima mone.jpg" alt="">
+                    </div>
+                    <div class="absolute ring-blue-600 ring-4 rounded-full left-4 top-4">
+                        <img class="w-9 rounded-full" src="images/fahima mone.jpg" alt="">
+                    </div>
+                    <div class="absolute bottom-2 left-2 font-semibold">
+                        <span class="text-white text-sm">Fahima Mone</span>
+                    </div>
+                </div>
+                <div class="w-1/4 sm:w-[800px] h-[15rem] rounded-xl shadow overflow-hidden flex flex-col group cursor-pointer relative">
+                    <div class="overflow-hidden">
+                        <img class="h-[15rem] object-cover group-hover:transform group-hover:scale-105 transition-all duration-1000" src="images/mahiya.jpg" alt="">
+                    </div>
+                    <div class="absolute ring-blue-600 ring-4 rounded-full left-4 top-4">
+                        <img class="w-9 rounded-full" src="images/mahiya.jpg" alt="">
+                    </div>
+                    <div class="absolute bottom-2 left-2 font-semibold">
+                        <span class="text-white text-sm">Mãhíyã Mîm</span>
+                    </div>
+                    <div class="bg-white absolute rounded-full bottom-24 right-2 w-12 h-12">
+                        <i class='bx bx-chevron-right flex justify-center items-center mt-2 text-2xl'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- STORY END -->
 
+            <!-- POST FORM -->
+            <div class="px-4 mt-4 shadow rounded-lg bg-white dark:bg-dark-second">
+                <div class="p-2 border-b border-gray-300 dark:border-dark-third flex space-x-4">
+                    <img class="w-12 h-12 rounded-full object-cover cursor-pointer" src="images/sanzid.jpg" alt="">
+                    <div class="flex-1 bg-gray-100 rounded-full flex items-center justify-start pl-4 cursor-pointer dark:bg-dark-third text-gray-500 text-lg dark:text-dark-txt font-medium hover:bg-gray-200">
+                        <span class="">What's on your mind, Shahriar?</span>
+                    </div>
+                </div>
+                <div class="p-2 flex space-x-4 xl:space-x-4 sm:space-x-[7rem] md:space-x-[13rem] lg:space-x-[9rem]">
+                    <div class="flex items-center space-x-1 rounded-lg hover:bg-gray-100 px-3">
+                        <div>
+                            <i class='bx bxs-video-plus text-red-600 xl:text-2xl text-2xl sm:text-2xl' ></i>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 font-medium text-sm xl:text-[16px]">Live video</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-1 rounded-lg hover:bg-gray-100 px-3">
+                        <div>
+                            <i class='bx bx-images text-green-600 xl:text-2xl text-2xl' ></i>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 font-medium text-sm xl:text-[16px]">Photo/video</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-1 rounded-lg hover:bg-gray-100 px-3">
+                        <div>
+                            <i class='bx bx-smile text-2xl text-yellow-500 xl:text-2xl text-2xl'></i>
+                        </div>
+                        <div>
+                            <span class="text-gray-500 font-medium text-sm xl:text-[16px]">Feeling/activity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- POST FORM END -->
         </div>
         <!-- MAIN CONTENT END -->
         <!-- RIGHT MENU -->
-        <div>
-
+        <div class="w-1/4 pt-16 h-full hidden xl:block px-4 fixed top-0 right-0">
+            <div class="h-full">
+                <div class="flex items-center justify-between px-4 pt-4">
+                    <span class="font-semibold text-gray-500 text-lg dark:text-dark-txt">Friend Requests</span>
+                    <span class="text-blue-500 cursor-pointer hover:bg-gray-200 dark:bg-dark-third p-2 rounded-md">See all</span>
+                </div>
+                <div class="p-2 ">
+                    <a href="#" class="flex items-center space-x-4 rounded-lg hover:bg-gray-200 dark:hover:bg-dark-third transition-all p-2">
+                        <img class="w-12 h-12 rounded-full object-cover" src="images/mohon.jpg" alt="Profile picture">
+                        <div class="flex-1 h-full">
+                            <div class="dark:text-dark-txt">
+                                <span class="font-semibold">Mohon Hasan</span>
+                                <span class="float-right text-sm">2d</span>
+                            </div>
+                            <div class="flex space-x-2 mt-2">
+                                <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center font-semibold text-white rounded-lg py-[6px]">
+                                    Confirm
+                                </div>
+                                <div class="w-1/2 bg-gray-200 cursor-pointer py-1 text-center font-semibold text-gray-900 rounded-lg hover:bg-gray-300 transition-all py-[6px]">
+                                    Delete
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="border-b border-gray-300 dark:border-dark-third mt-2">
+                </div>
+                <!-- CONTACTS -->
+                <div class="flex justify-between items-center px-4 pt-4 text-gray-500 dark:text-dark-txt">
+                    <span class="font-semibold text-lg">Contacts</span>
+                    <div class="flex space-x-1 items-center">
+                        <div class="w-8 h-8 grid place-items-center text-xl hover:bg-gray-200 dark:hover:bg-dark-third rounded-full cursor-pointer">
+                            <i class='bx bx-search-alt-2' ></i>
+                        </div>
+                        <div class="w-10 h-10 grid place-items-center text-xl hover:bg-gray-200 dark:hover:bg-dark-third rounded-full cursor-pointer"> 
+                            <i class='bx bx-dots-horizontal-rounded'></i>
+                        </div>
+                    </div>
+                </div>
+                <ul class="p-2">
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="images/santa.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Šhåńtã Îšlãm Ùrmî </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer mt-4">
+                            <div class="relative">
+                                <img src="images/nurjahan.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Nurjahan Rahman</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer mt-4">
+                            <div class="relative">
+                                <img src="images/mahiya.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Mãhíyã Mîm</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer mt-4">
+                            <div class="relative">
+                                <img src="images/lubna.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Lubna Islam </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer mt-4">
+                            <div class="relative">
+                                <img src="images/nadiya.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Nadia Akter Nodi</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer mt-4">
+                            <div class="relative">
+                                <img src="images/nafra.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Naf Ra Islam</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer mt-4">
+                            <div class="relative">
+                                <img src="images/fahima mone.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Fahima Mone</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex items-center space-x-4 hover:bg-gray-200 dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer mt-4">
+                            <div class="relative">
+                                <img src="images/farjana.jpg" alt="Friends profile picture" class="rounded-full w-7">
+                                <span class="bg-gray-500 w-[10px] h-[10px] rounded-full absolute right-[-2px] top-[19px] border-white border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-medium">Farjana Islam </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- CONTACTS END -->
+            </div>
         </div>
         <!-- RIGHT MENU END -->
     </div>
